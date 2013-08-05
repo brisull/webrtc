@@ -42,8 +42,8 @@ var webrtc = (function() {
             video.autoplay = true;
             video.src = video.mozSrcObject = videoSource;
 
-            display.width = feed.width = 320;
-            display.height = feed.height = 240;
+            display.width = feed.width = 640;
+            display.height = feed.height = 480;
 
             streamFeed();
         }
@@ -108,6 +108,8 @@ var webrtc = (function() {
                     if (data[i] > 127) {
                         data[i + 3] = 127;
                     }
+                default:
+                    break;
 
             }
             
