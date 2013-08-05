@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Getting started with WebRTC</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+
+        <h1>WEBRTC!</h1>
+
+        <video id="webcam"></video>
+        <canvas id="feed"></canvas>
+        <canvas id="display"></canvas>
+        <canvas id="photo"></canvas>
+
+        <input type="button" id="takePhoto" value="Cheese!" />
+        <fieldset>
+            <legend>Effects</legend>
+            <label for="effect0">Red</label><input type="radio" name="effect" class="effect" id="effect0" value="red" />
+            <label for="effect1">Blue</label><input type="radio" name="effect" class="effect" id="effect1" value="blue" />
+            <label for="effect2">Green</label><input type="radio" name="effect" class="effect" id="effect2" value="green" />
+            <label for="effect3">Invert</label><input type="radio" name="effect" class="effect" id="effect3" value="invert" />
+        </fieldset>
+        <script src="script.js"></script>
+    </body>
+</html>
